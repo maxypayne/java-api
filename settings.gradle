@@ -1,0 +1,8 @@
+rootProject.name = 'personal'
+include 'rest-api'
+include 'infrastructure'
+include 'infrastructure:persistance'
+findProject(':infrastructure:persistance')?.name = 'persistance'
+include 'application'
+include 'domain'
+
